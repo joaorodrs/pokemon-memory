@@ -1,0 +1,75 @@
+<svg width="95" height="105" viewBox="0 0 95 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="15" y="25" width="45" height="65" fill="#FFFF00"/>
+<rect x="5" y="30" width="10" height="25" fill="#FFFF00"/>
+<rect x="10" y="65" width="5" height="5" fill="#FFFF00"/>
+<rect x="45" y="95" width="10" height="5" fill="#FFFF00"/>
+<rect x="20" y="5" width="10" height="20" fill="#FFFF00"/>
+<rect x="70" y="15" width="5" height="5" fill="#FFFF00"/>
+<rect x="80" y="5" width="5" height="5" fill="#FFFF00"/>
+<rect x="20" y="75" width="5" height="5" fill="#FF8500"/>
+<rect x="55" y="50" width="5" height="5" fill="#FF8500"/>
+<rect x="50" y="35" width="5" height="5" fill="#FF8500"/>
+<rect x="25" y="20" width="5" height="5" fill="#FF8500"/>
+<rect x="65" y="15" width="15" height="35" fill="#FF8500"/>
+<rect x="75" y="10" width="15" height="15" fill="#FF8500"/>
+<rect x="15" y="80" width="30" height="5" fill="#FF8500"/>
+<rect x="20" y="65" width="25" height="5" fill="#FF8500"/>
+<rect x="40" y="60" width="15" height="5" fill="#FF8500"/>
+<rect x="50" y="55" width="15" height="45" fill="#FF8500"/>
+<rect x="15" y="55" width="5" height="15" fill="#FF8500"/>
+<rect x="75" y="10" width="5" height="5" fill="#FFFF00"/>
+<rect x="25" y="5" width="5" height="5" fill="#795547"/>
+<rect x="60" y="70" width="5" height="5" fill="#795547"/>
+<rect x="55" y="25" width="5" height="5" fill="#795547"/>
+<rect x="55" y="60" width="10" height="5" fill="#795547"/>
+<rect x="55" y="20" width="10" height="5" fill="#795547"/>
+<path d="M35 60H40V65H35V60Z" fill="#F34236"/>
+<path d="M35 55H45V60H35V55Z" fill="#F34236"/>
+<rect x="35" y="90" width="15" height="5" fill="black"/>
+<rect x="45" y="100" width="15" height="5" fill="black"/>
+<rect x="60" y="100" width="15" height="5" transform="rotate(-90 60 100)" fill="black"/>
+<rect x="60" y="55" width="10" height="5" transform="rotate(-90 60 55)" fill="black"/>
+<rect x="60" y="35" width="10" height="5" transform="rotate(-90 60 35)" fill="black"/>
+<rect x="80" y="45" width="10" height="5" transform="rotate(-90 80 45)" fill="black"/>
+<rect x="90" y="20" width="10" height="5" transform="rotate(-90 90 20)" fill="black"/>
+<rect x="55" y="45" width="15" height="5" transform="rotate(-90 55 45)" fill="black"/>
+<rect x="65" y="85" width="50" height="5" transform="rotate(-90 65 85)" fill="black"/>
+<rect y="35" width="5" height="15" fill="black"/>
+<rect x="15" y="15" width="5" height="10" fill="black"/>
+<rect x="20" y="5" width="5" height="10" fill="black"/>
+<rect x="30" y="5" width="5" height="20" fill="black"/>
+<rect x="5" y="40" width="5" height="5" fill="black"/>
+<rect x="65" y="20" width="5" height="5" fill="black"/>
+<rect x="70" y="50" width="5" height="5" fill="black"/>
+<rect x="75" y="45" width="5" height="5" fill="black"/>
+<rect x="75" y="30" width="5" height="5" fill="black"/>
+<rect x="80" y="25" width="5" height="5" fill="black"/>
+<rect x="85" y="20" width="5" height="5" fill="black"/>
+<rect x="85" y="5" width="5" height="5" fill="black"/>
+<rect x="80" width="5" height="5" fill="black"/>
+<rect x="75" y="5" width="5" height="5" fill="black"/>
+<rect x="70" y="10" width="5" height="5" fill="black"/>
+<rect x="5" y="30" width="5" height="5" fill="black"/>
+<rect x="10" y="25" width="5" height="5" fill="black"/>
+<rect x="5" y="50" width="5" height="5" fill="black"/>
+<rect x="30" y="45" width="5" height="5" fill="black"/>
+<rect x="25" y="45" width="5" height="5" fill="white"/>
+<rect x="5" y="65" width="5" height="5" fill="black"/>
+<rect x="20" y="80" width="5" height="5" fill="black"/>
+<rect x="45" y="80" width="5" height="5" fill="black"/>
+<path d="M25 50H35V55H25V50Z" fill="black"/>
+<path d="M45 20H55V25H45V20Z" fill="black"/>
+<path d="M55 15H70V20H55V15Z" fill="black"/>
+<path d="M35 25H45V30H35V25Z" fill="black"/>
+<path d="M25 0H35V5H25V0Z" fill="black"/>
+<rect x="40" y="75" width="5" height="5" fill="black"/>
+<rect x="40" y="95" width="5" height="5" fill="black"/>
+<rect x="55" y="90" width="5" height="5" fill="black"/>
+<rect x="45" y="70" width="5" height="5" fill="black"/>
+<rect x="10" y="80" width="5" height="5" fill="black"/>
+<rect x="10" y="70" width="5" height="5" fill="black"/>
+<rect x="10" y="55" width="5" height="10" fill="black"/>
+<rect x="15" y="70" width="5" height="10" fill="black"/>
+<rect x="10" y="90" width="5" height="25" transform="rotate(-90 10 90)" fill="black"/>
+<rect x="5" y="35" width="5" height="5" fill="white"/>
+</svg>
