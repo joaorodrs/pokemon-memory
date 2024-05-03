@@ -11,11 +11,11 @@ import './App.css'
 
 function App() {
   return (
-    <main className="w-screen h-screen px-9 py-12">
+    <main className="w-screen h-screen px-9 py-12 flex flex-col md:justify-center">
       <h1 className="font-mono text-2xl text-center mx-auto md:text-4xl">Jogo da Memória</h1>
       <h2 className="mt-5 text-zinc-400 text-center mx-auto md:text-lg">Você tem 15 tentativas para encontrar todos os pokemóns</h2>
 
-      <div className="mt-8 max-w-[1000px] mx-auto">
+      <div className="mt-8 max-w-[700px] mx-auto w-full">
         <div className="flex justify-between items-end">
           <span className="text-sm font-extrabold md:text-md">Tentativas</span>
           <span className="text-2xl font-extrabold">5/15</span>
@@ -23,7 +23,7 @@ function App() {
         <Progress value={34} className="mt-2" />
       </div>
 
-      <div className="flex flex-wrap mt-8 max-w-[1000px] mx-auto">
+      <div className="flex flex-wrap mt-12 max-w-[700px] mx-auto px-3 justify-center gap-8 h-[55vh] overflow-y-auto md:h-fit md:justify-between md:gap-0 md:px-0 md:gap-y-4">
         <button className="flex items-center justify-center bg-white size-32 rounded-2xl">
           <img src={CyndaquilSvg} alt="Cyndaquil" />
         </button>
