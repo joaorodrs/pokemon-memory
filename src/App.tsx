@@ -14,17 +14,20 @@ function App() {
   const [matchedCards, setMatchedCards] = useState<Card[]>([])
 
   function onSelectCard(card: Card) {
-    if (selectedCards.length) {
+    if (selectedCards.find(item => item.id === card.id)) {
+      setSelectedCards(curr => curr.filter(item => item.id !== card.id))
+      return
+    }
+
+    if (selectedCards.length < 2) {
       setSelectedCards(curr => [...curr, card])
       setTimeout(() => setSelectedCards([]), 1000)
     }
 
     if (selectedCards.map(item => item.name).includes(card.name)) {
       setMatchedCards(curr => [...curr, ...selectedCards, card])
-      setSelectedCards([])
+      setSelectedCards(curr => curr.filter(item => item.name !== card.name))
     }
-
-    setSelectedCards(curr => [...curr, card])
   }
 
   function getCards() {
@@ -78,7 +81,6 @@ function GameCard({
     <button
       key={String(id)}
       className="flex items-center justify-center bg-white size-32 rounded-2xl"
-      disabled={isSelected}
       onClick={() => onSelectCard({ id, source, name })}
     >
       <img src={!isSelected ? PokeballSvg : source} alt={!isSelected ? 'Pokeball' : name} />
