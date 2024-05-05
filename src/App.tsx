@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 
-import { Progress } from '@/components/ui/progress'
 import PokeballSvg from '@/assets/pokeball.svg'
-import pokemons from './utils/pokemons'
 
-import './App.css'
+import pokemons from './utils/pokemons'
 import { Card } from './types'
 import { shuffleArray } from './utils'
+
+import './App.css'
 
 function App() {
   const [cards, setCards] = useState<Card[]>([])
@@ -14,13 +15,13 @@ function App() {
   const [matchedCards, setMatchedCards] = useState<Card[]>([])
 
   function onSelectCard(card: Card) {
-    if (selectedCards.find(item => item.id === card.id)) {
-      setSelectedCards(curr => curr.filter(item => item.id !== card.id))
-      return
-    }
+    if (selectedCards.length === 2) return;
 
     if (selectedCards.length < 2) {
       setSelectedCards(curr => [...curr, card])
+    }
+
+    if (selectedCards.length) {
       setTimeout(() => setSelectedCards([]), 1000)
     }
 
@@ -47,15 +48,7 @@ function App() {
   return (
     <main className="w-screen h-screen px-9 py-12 flex flex-col md:justify-center">
       <h1 className="font-mono text-2xl text-center mx-auto md:text-4xl">Jogo da Memória</h1>
-      <h2 className="mt-5 text-zinc-400 text-center mx-auto md:text-lg">Você tem 15 tentativas para encontrar todos os pokemóns</h2>
-
-      <div className="mt-8 max-w-[600px] mx-auto w-full">
-        <div className="flex justify-between items-end">
-          <span className="text-sm font-extrabold md:text-md">Tentativas</span>
-          <span className="text-2xl font-extrabold">5/15</span>
-        </div>
-        <Progress value={34} className="mt-2" />
-      </div>
+      <h2 className="mt-5 text-zinc-400 text-center mx-auto md:text-lg">Encontre todos os pokemóns!</h2>
 
       <div className="flex flex-wrap mt-12 max-w-[600px] mx-auto px-3 justify-center gap-8 h-[55vh] overflow-y-auto md:h-fit md:justify-between md:gap-0 md:px-0 md:gap-y-4">
         {cards.map(item => (
@@ -70,6 +63,11 @@ function App() {
   )
 }
 
+const variants = {
+  hidden: { rotateY: '0deg', transition: { duration: 0.3 } },
+  visible: { rotateY: '360deg', transition: { duration: 0.3 } },
+}
+
 function GameCard({
   id,
   source,
@@ -78,13 +76,16 @@ function GameCard({
   isSelected
 }: Card & { onSelectCard(card: Card): void, isSelected: boolean }) {
   return (
-    <button
+    <motion.button
       key={String(id)}
       className="flex items-center justify-center bg-white size-32 rounded-2xl"
       onClick={() => onSelectCard({ id, source, name })}
+      disabled={isSelected}
+      variants={variants}
+      animate={isSelected ? 'visible' : 'hidden'}
     >
       <img src={!isSelected ? PokeballSvg : source} alt={!isSelected ? 'Pokeball' : name} />
-    </button>
+    </motion.button>
   )
 }
 
