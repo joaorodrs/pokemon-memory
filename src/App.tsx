@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { GithubIcon } from 'lucide-react'
 
 import PokeballSvg from '@/assets/pokeball.svg'
 
@@ -59,6 +60,15 @@ function App() {
           />
         ))}
       </div>
+
+      <a
+        aria-label="Github"
+        href="https://github.com/joaorodrs/pokemon-memory"
+        target='_blank'
+        className="mx-auto mt-8 text-white p-4 m-2 rounded-xl hover:text-red-500 hover:bg-white/10"
+      >
+        <GithubIcon />
+      </a>
     </main>
   )
 }
